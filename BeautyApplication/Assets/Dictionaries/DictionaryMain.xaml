@@ -1,0 +1,46 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <FontFamily x:Key="CaptionFont">
+        pack://application:,,,/Assets/Fonts/SFMono-Bold.ttf#SF Mono
+    </FontFamily>
+    <SolidColorBrush Color="#F29B99" x:Key="MainColor"/>
+    <SolidColorBrush Color="#D9D2D0" x:Key="SecondColor"/>
+    <SolidColorBrush Color="Azure" x:Key="ActiveColor"/>
+    <SolidColorBrush Color="DarkSlateGray" x:Key="TextColor"/>
+    
+    <Style TargetType="Grid" >
+        <Setter Property="Background" Value="{StaticResource MainColor}"/>
+    </Style>
+    <Style TargetType="TextBlock" >
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="Margin" Value="0 0 5 0"/>
+    </Style>
+    <Style TargetType="TextBlock" x:Key="TitleTextBlock">
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="{StaticResource TextColor}"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="FontFamily" Value="{StaticResource CaptionFont}"/>
+    </Style>
+
+
+    <Style TargetType="UniformGrid">
+        <Setter Property="Margin" Value="0 5"/>
+    </Style>
+    
+    <Style TargetType="TextBox" >
+        <Setter Property="Padding" Value="5"/>
+    </Style>
+    
+    <Style TargetType="PasswordBox">
+        <Setter Property="Padding" Value="5"/>
+    </Style>
+    
+    <Style TargetType="Button" >
+        <Setter Property="Background" Value="{StaticResource SecondColor}"/>
+        <Setter Property="Padding" Value="5 5 5 5"/>
+        <Setter Property="Margin" Value="0 5 0 5"/>
+    </Style>
+</ResourceDictionary>
