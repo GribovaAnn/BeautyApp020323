@@ -9,9 +9,9 @@ namespace BeautyApplication.Models
     public class ServiceCategoryes
     {
    
-            public int СategoryId { get; set; }
-            public string СategoryTitle { get; set; }
-            public byte[] СategoryImage { get; set; }
+            public int categoryId { get; set; }
+            public string categoryTitle { get; set; }
+            public byte[] categoryImage { get; set; }
     
    
 

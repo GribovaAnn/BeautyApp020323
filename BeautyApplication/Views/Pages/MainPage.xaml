@@ -18,8 +18,8 @@
                             <RowDefinition/>
                             <RowDefinition Height="auto"/>
                         </Grid.RowDefinitions>
-                        <Image Source="{Binding СategoryImage}" Height="200"/>
-                        <TextBlock   Text="{Binding СategoryTitle}"  />
+                        <Image Source="{Binding categoryImage}" Height="200"/>
+                        <TextBlock   Text="{Binding categoryTitle}"  />
                     </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>
