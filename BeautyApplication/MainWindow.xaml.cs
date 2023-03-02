@@ -58,9 +58,16 @@ namespace BeautyApplication
             LogInTextBlock.Visibility = Visibility.Collapsed;
         }
 
+        /// <summary>
+        /// Изменение интерфейса при загрузке страницы
+        /// </summary>
         private void MainFrameNavigated(object sender, NavigationEventArgs e)
         {
-
+            if (App.CurrentUser!=null)
+            {
+                PersonTextBlock.Text = App.CurrentUser.UserLogin;
+            }
+            
         }
     }
 }
