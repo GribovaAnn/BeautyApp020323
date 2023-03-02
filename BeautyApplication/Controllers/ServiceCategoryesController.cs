@@ -22,6 +22,7 @@ namespace BeautyApplication.Controllers
             using (HttpClient client = new HttpClient())
             {
                 string url = $"{Manager.RootUrl}ServiceCategoryes";
+                Console.WriteLine(url);
                 HttpResponseMessage response = client.GetAsync(url).Result;
                 var content = response.Content.ReadAsStringAsync();
                 var answer = JsonConvert.DeserializeObject<List<ServiceCategoryes>>(content.Result);
