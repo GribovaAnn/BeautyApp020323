@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace BeautyApplication.Models
 {
-    internal class ServiceCategoryes
+    public class ServiceCategoryes
     {
+   
+            public int СategoryId { get; set; }
+            public string СategoryTitle { get; set; }
+            public byte[] СategoryImage { get; set; }
+    
+   
+
     }
 }
