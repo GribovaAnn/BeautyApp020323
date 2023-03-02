@@ -61,6 +61,7 @@
     </ApplicationDefinition>
     <Compile Include="Controllers\Manager.cs" />
     <Compile Include="Controllers\UsersController.cs" />
+    <Compile Include="Models\ServiceCategoryes.cs" />
     <Compile Include="Models\Services.cs" />
     <Compile Include="Models\Users.cs" />
     <Compile Include="Views\Pages\AuthPage.xaml.cs">

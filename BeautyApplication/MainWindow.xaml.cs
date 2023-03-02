@@ -65,7 +65,7 @@ namespace BeautyApplication
         {
             if (App.CurrentUser!=null)
             {
-                PersonTextBlock.Text = App.CurrentUser.UserLogin;
+                PersonTextBlock.Text = $"Пользователь: {App.CurrentUser.UserLogin}";
             }
             
         }
