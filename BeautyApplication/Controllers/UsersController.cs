@@ -26,9 +26,17 @@ namespace BeautyApplication.Controllers
                 string url = Manager.RootUrl + "Users/" + login + "/" + password;
                 Console.WriteLine(url);
                 HttpResponseMessage response = client.GetAsync($"{url}").Result;
-                var content = response.Content.ReadAsStringAsync();
-                var answer = JsonConvert.DeserializeObject<Users>(content.Result);
-                return answer;
+                
+                if (response.IsSuccessStatusCode)
+                {
+                    var content = response.Content.ReadAsStringAsync();
+                    var answer = JsonConvert.DeserializeObject<Users>(content.Result);
+                    return answer;
+                }
+                else { return null; }
+                
+                
+                
             }
         }
     }
