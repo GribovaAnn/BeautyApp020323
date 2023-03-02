@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BeautyApplication.Controllers;
+using BeautyApplication.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -39,7 +41,15 @@ namespace BeautyApplication.Views.Pages
         /// </summary>
         private void SignInButtonClick(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Нажали на авторизацию");
+           Users result=UsersController.GetUser(LoginTextBox.Text, PasswordPasswordBox.Password);
+            if (result!=null)
+            {
+                this.NavigationService.Navigate(new MainPage());
+            }
+            else
+            {
+                MessageBox.Show("Пользователь отсутствует");
+            }
         }
 
 
