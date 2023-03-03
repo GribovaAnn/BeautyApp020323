@@ -1,0 +1,78 @@
+﻿<Page x:Class="BeautyApplication.Views.Pages.RegPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BeautyApplication.Views.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Регистрация клиента">
+
+    <GroupBox>
+        <StackPanel>
+            <UniformGrid Columns="2">
+                <StackPanel>
+                    <TextBlock   Text="Личнные данные"  Style="{StaticResource CategoryTextBlock}"  />
+                    <UniformGrid Columns="2">
+                        <TextBlock Text="Фамилия" HorizontalAlignment="Right"/>
+                        <TextBox x:Name="SurnameTextBox"/>
+                    </UniformGrid>
+                    <UniformGrid Columns="2">
+                        <TextBlock Text="Имя" HorizontalAlignment="Right"/>
+                        <TextBox x:Name="NameTextBox"/>
+                    </UniformGrid>
+                    <UniformGrid Columns="2">
+                        <TextBlock Text="Отчество" HorizontalAlignment="Right"/>
+                        <TextBox x:Name="PatronymicTextBox"/>
+                    </UniformGrid>
+                    <UniformGrid Columns="2">
+                        <TextBlock Text="Пол" HorizontalAlignment="Right"/>
+                        <ComboBox x:Name="GenderComboBox"/>
+                    </UniformGrid>
+                    <UniformGrid Columns="2">
+                        <TextBlock Text="Дата рождения" HorizontalAlignment="Right"/>
+                        <DatePicker x:Name="BirthdatePicker"/>
+                    </UniformGrid>
+                    <UniformGrid Columns="2">
+                        <TextBlock Text="Почта" HorizontalAlignment="Right"/>
+                        <TextBox x:Name="EmailTextBox"/>
+                    </UniformGrid>
+                    <UniformGrid Columns="2">
+                        <TextBlock Text="Телефон" HorizontalAlignment="Right"/>
+                        <TextBox x:Name="PhoneTextBox"/>
+                    </UniformGrid>
+                    <StackPanel HorizontalAlignment="Center">
+                        <Button Content="Зарегистрировать" Click="RegButtonClick" />
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel>
+                    <StackPanel>
+                        <TextBlock   Text="Авторизационные  данные"  Style="{StaticResource CategoryTextBlock}"  />
+                        <UniformGrid Columns="2">
+                            <TextBlock Text="Логин" HorizontalAlignment="Right"/>
+                            <TextBox x:Name="LoginTextBox"/>
+                        </UniformGrid>
+                        <UniformGrid Columns="2">
+                            <TextBlock Text="Пароль" HorizontalAlignment="Right"/>
+                            <TextBox x:Name="PasswordTextBox"/>
+                        </UniformGrid>
+                        <UniformGrid Columns="2">
+                            <TextBlock Text="Повторите пароль" HorizontalAlignment="Right"/>
+                            <TextBox x:Name="ReturnPasswordTextBox"/>
+                        </UniformGrid>
+                    </StackPanel>
+                    <StackPanel>
+                        <TextBlock   Text="Введите символы с картинки:"  Style="{StaticResource CategoryTextBlock}"  />
+                        <UniformGrid Columns="2">
+                            <StackPanel x:Name="CapchaStackPanel" Height="50" HorizontalAlignment="Right"  Margin="0 0 20 0" Orientation="Horizontal"/>
+                            <StackPanel>
+                                <TextBox x:Name="SymbolsTextBox" Height="30"/>
+                                <Button Content="Обновить Captcha"   x:Name="NewCaptcha" Click="NewCaptchaClick"/>
+                            </StackPanel>
+                        </UniformGrid>
+                    </StackPanel>
+                </StackPanel>
+            </UniformGrid>
+        </StackPanel  >
+    </GroupBox>
+</Page>

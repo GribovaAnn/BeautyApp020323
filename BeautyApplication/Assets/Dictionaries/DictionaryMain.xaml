@@ -11,7 +11,9 @@
     
     <Style TargetType="Grid" >
         <Setter Property="Background" Value="{StaticResource MainColor}"/>
+
     </Style>
+    
     <Style TargetType="TextBlock" >
         <Setter Property="HorizontalAlignment" Value="Center"/>
         <Setter Property="FontSize" Value="16"/>
@@ -40,7 +42,29 @@
     
     <Style TargetType="Button" >
         <Setter Property="Background" Value="{StaticResource SecondColor}"/>
-        <Setter Property="Padding" Value="5 5 5 5"/>
-        <Setter Property="Margin" Value="0 5 0 5"/>
+        <Setter Property="Padding" Value="5"/>
+        <Setter Property="Margin" Value="0 5"/>
     </Style>
+    <Style TargetType="ListView" >
+        <Setter Property="Background" Value="{StaticResource MainColor}"/>
+    </Style>
+    <Style TargetType="TextBlock" x:Key="CategoryTextBlock">
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="FontFamily" Value="{StaticResource CaptionFont}"/>
+        <Setter Property="Border.CornerRadius" Value="10"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="{StaticResource ActiveColor}"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+        <Setter Property="Width" Value="200"/>
+        <Setter Property="VerticalAlignment" Value="Bottom"/>
+    </Style>
+    <Style TargetType="GroupBox">
+        <Setter Property="Padding" Value="5 10 5 5"/>
+        <Setter Property="Margin" Value="10"/>
+    </Style>
+    <Style TargetType="Border">
+        <Setter Property="BorderBrush" Value="{StaticResource SecondColor}"/>
+        <Setter Property="BorderThickness" Value="0"/>
+    </Style>
+
 </ResourceDictionary>

@@ -34,7 +34,7 @@ namespace BeautyApplication.Views.Pages
         /// </summary>
         private void RegTextBlockMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("переход на регистрацию");
+            this.NavigationService.Navigate(new RegPage());
         }
         /// <summary>
         /// Авторизация

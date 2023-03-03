@@ -9,7 +9,8 @@
       Title="Салон красоты">
 
     <Grid>
-        <ListView x:Name="CategoriesListView"
+        <ListView x:Name="CategoriesListView" 
+                  HorizontalAlignment="Center" 
                   VerticalAlignment="Center" >
             <ListView.ItemTemplate>
                 <DataTemplate >
@@ -19,7 +20,7 @@
                             <RowDefinition Height="auto"/>
                         </Grid.RowDefinitions>
                         <Image Source="{Binding categoryImage}" Height="200"/>
-                        <TextBlock   Text="{Binding categoryTitle}"  />
+                        <TextBlock   Text="{Binding categoryTitle}" Style="{StaticResource CategoryTextBlock}"  />
                     </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>

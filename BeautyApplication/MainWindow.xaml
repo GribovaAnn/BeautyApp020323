@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Icon="Assets/Images/beauty_logo.png"
         Title="Салон красоты"
-        Height="450"
+        Height="500"
         Width="800"
         MaxHeight="900"
         MaxWidth="1920"
@@ -44,6 +44,7 @@
         <StackPanel Grid.Row="3" Orientation="Horizontal">
             <Ellipse Fill="Red" />
             <TextBlock x:Name="StatusTextBlock"/>
-        </StackPanel>
+        </StackPanel>
+
     </Grid>
 </Window>

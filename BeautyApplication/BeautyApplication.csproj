@@ -59,9 +59,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controllers\ClientsController.cs" />
     <Compile Include="Controllers\Manager.cs" />
     <Compile Include="Controllers\ServiceCategoryesController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
+    <Compile Include="Models\Clients.cs" />
     <Compile Include="Models\ServiceCategoryes.cs" />
     <Compile Include="Models\Services.cs" />
     <Compile Include="Models\Users.cs" />
@@ -70,6 +72,9 @@
     </Compile>
     <Compile Include="Views\Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\RegPage.xaml.cs">
+      <DependentUpon>RegPage.xaml</DependentUpon>
     </Compile>
     <Page Include="Assets\Dictionaries\DictionaryMain.xaml">
       <SubType>Designer</SubType>
@@ -92,6 +97,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Pages\MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\RegPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
